@@ -9,8 +9,9 @@
                         <ToDoForm
                         @create="addTask"
                         />
-                        <PostList
+                        <ToDoList
                         :tasks="tasks"
+                        @remove="removeTask"
                         />    
                     </div> 
                 </div>
@@ -18,15 +19,17 @@
         </div>
     </div>
 </section>
-  </template>
+<DefFooter />
+</template>
   
   <script>
   import ToDoForm from "@/components/todo-form.vue";
-  import PostList from "@/components/todo-list.vue";
+  import ToDoList from "@/components/todo-list.vue";
+  import DefFooter from "@/components/def-footer.vue"
   export default {
     name: "home",
     components: {
-      ToDoForm, PostList
+      ToDoForm, ToDoList, DefFooter
     },
     data() {
       return {
@@ -39,6 +42,9 @@
     methods: {
       addTask(task) {
         this.tasks.push(task);
+      },
+      removeTask(task) {
+        this.tasks = this.tasks.filter(t => t.id !== task.id)
       }
     }
   }

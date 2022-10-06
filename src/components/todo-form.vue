@@ -34,12 +34,16 @@ export default {
     },
     methods: {
         createTask() {
+          if (this.task.title.length != 0 && this.task.body.length != 0) {
             this.task.id = Date.now();
             this.$emit('create', this.task)
             this.task= {
                 title: '',
                 body: ''
             }
+          } else {
+            alert('you should write something')
+          }            
         }
     }    
 }
