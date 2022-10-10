@@ -17,12 +17,11 @@
 </li> 
 </template>
 
-<script>    
-
+<script>
 export default {
     props: {
         task: {
-            type: Object, 
+            type: Object,
             required: true
         }
     }

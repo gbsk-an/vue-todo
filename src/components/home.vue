@@ -29,7 +29,6 @@
                     </div>                
                 </div>
             </div>
-            <button @click="fetchTasks"></button>
         </div>
     </div>
 </section>
@@ -72,7 +71,7 @@
         try {
           this.isTasksLoading = true
           const response = await axios.get('https://jsonplaceholder.typicode.com/posts?_limit=10')
-          this.tasks = response.data;
+          // this.tasks = response.data;
         } catch (e) {
           alert('Error')
         } finally {

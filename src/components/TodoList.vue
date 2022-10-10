@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import ToDoItem from '@/components/todo-item.vue';
+import ToDoItem from '@/components/TodoItem.vue';
 export default {
     name: "todo-list",
     components: {

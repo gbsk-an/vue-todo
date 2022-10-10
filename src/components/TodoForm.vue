@@ -45,7 +45,7 @@ export default {
             alert('you should write something')
           }            
         }
-    }    
+    },
 }
 </script>
 
