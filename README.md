@@ -1,17 +1,21 @@
-# project
+# Vue 3 todo app
 
-## Project setup
-```
+## Features
+This project is a simple Todo app
+* add tasks
+* remove them 
+
+## Preview
+soon 
+
+### Get Started
+``` bash
+# install dependencies
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
+# serve with hot reload at localhost:8080
 npm run serve
-```
 
-### Compiles and minifies for production
-```
+# compiles and minifies for production
 npm run build
 ```
-
