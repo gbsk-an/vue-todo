@@ -2,8 +2,10 @@
 
 ## Features
 This project is a simple Todo app
-* add tasks
-* remove them 
+* add, remove and search tasks
+* sort by title and description
+* pagination 
+
 
 ## Preview
 soon 
