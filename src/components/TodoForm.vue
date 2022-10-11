@@ -1,6 +1,6 @@
 <template>
-<form @submit.prevent class="d-flex flex-column bd-highlight justify-content-center mb-4">
-  <div class="form-outline flex-fill">
+<form @submit.prevent class="d-flex flex-column flex-gap bd-highlight justify-content-center">
+  <div class="form-outline d-flex flex-column flex-gap">
     <input-default
       v-model="task.title"
       type="text" 
@@ -50,5 +50,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-   
+.flex-gap {
+  gap: 1em;
+}
 </style>

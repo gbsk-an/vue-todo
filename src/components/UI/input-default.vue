@@ -2,7 +2,7 @@
     <input 
         type="text" 
         id="form3" 
-        class="form-control form-control-lg mb-4"
+        class="form-control form-control-lg"
         :value="modelValue" 
         @input="updateInput"
     />
